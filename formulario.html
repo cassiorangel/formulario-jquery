@@ -1,10 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Formulario</title>
+  <meta charset="UTF-8">
+  <title>Formulario com Jquery</title>
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
-	
+  
+  <div class="container well" style="margin-top: 50px">
+    <form id="formulario">
+      <fieldset>
+        <legend>Inscreva-se para uma conta de empresa</legend>
+      </fieldset>
+      <p>Criar um login</p>
+
+      <div class="form-group col-md-12">
+        <input class="form-control" name="email" placeholder="Email" type="email">
+      </div>
+      <div class="form-group col-md-6">
+        <input class="form-control" name="password" id="password" placeholder="Senha" type="password">
+      </div>
+      <div class="form-group col-md-6">
+        <input class="form-control" name="password2" placeholder="Confirme Senha" type="password">
+      </div>
+      <div class="clearfix">
+      </div>
+      <p>Conte-nos sobre sua empresa</p>
+      <div class="form-group col-md-6">
+        <input class="form-control" name="firstName" placeholder="Primeiro nome" type="text">
+      </div>
+     <div class="form-group col-md-6">
+       <input class="form-control" name="secondName" placeholder="Sobrenome" type="text">
+     </div>
+
+     <div class="form-group col-md-12">
+       <input class="form-control" name="businessName" placeholder="Nome da empresa" type="text">
+     </div>
+
+     <div class="form-group col-md-12">
+       <input class="form-control" name="phone" placeholder="Telefone" type="tel">
+     </div>
+
+     <div class="form-group col-md-12">
+       <input class="form-control" name="address" placeholder="Endereço" type="text">
+     </div>
+
+     <div class="form-group col-md-6">
+       <input class="form-control" name="town" placeholder="Cidade" type="text">
+     </div>
+
+     <div class="form-group col-md-6">
+       <input class="form-control" name="postcode" placeholder="CEP" type="text">
+     </div>
+     <div class="form-group col-md-12">
+       <div class="checkbox">
+         <label>
+           <input id="terms" name="terms" type="checkbox"> 
+                      
+            Li, e concordo com o Contrato de Usuário da Empresa e com a Política de Privacidade (incluindo o processamento e divulgação de meus dados pessoais), e eu sou maior de idade. Eu entendo que posso mudar minhas preferências de comunicação a qualquer momento. Por favor, leia o Key Payment e ServiceInformation.
+         </label>
+       </div>
+     </div>
+      <div>
+        <input class="btn btn-primary" id="submit-button" type="submit" value="Inscrever-se">
+      </div>
+
+    </form>
+  </div>
+
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.3.min.js"></script>
+  <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.0/jquery.validate.min.js"></script>
+  <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.0/additional-methods.min.js"></script>
+  <script src="js/script.js"></script>
+
 </body>
 </html>
